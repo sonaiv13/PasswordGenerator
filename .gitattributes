@@ -1,0 +1,3 @@
+path/to/dir/* linguist-vendored
+path/to/file.extension linguist-vendored
+path/to/file.extension linguist-language=JavaScript
