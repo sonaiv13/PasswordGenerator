@@ -1,3 +1,10 @@
-path/to/dir/* linguist-vendored
-path/to/file.extension linguist-vendored
-path/to/file.extension linguist-language=JavaScript
+# Ignorar dependencias y bibliotecas
+node_modules/* linguist-vendored
+vendor/* linguist-vendored
+
+# Ignorar archivos de configuración de CI/CD
+.github/* linguist-vendored
+.gitlab-ci.yml linguist-vendored
+
+# Forzar archivo específico a tratarse como JavaScript
+scripts/special_config.js linguist-language=JavaScript
