@@ -1,10 +1,8 @@
-# Ignorar dependencias y bibliotecas
-node_modules/* linguist-vendored
-vendor/* linguist-vendored
+# Ignorar todos los archivos CSS
+*.css linguist-vendored
 
-# Ignorar archivos de configuración de CI/CD
-.github/* linguist-vendored
-.gitlab-ci.yml linguist-vendored
+# Marcar todos los archivos JavaScript como detectables
+*.js linguist-detectable
 
-# Forzar archivo específico a tratarse como JavaScript
-scripts/special_config.js linguist-language=JavaScript
+# Forzar archivos específicos a ser considerados JavaScript
+path/to/yourfile.css linguist-language=JavaScript
