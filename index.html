@@ -8,6 +8,27 @@
     <body>
         <div class="container">
             <h1>Generate a <br><span>Random Password</span></h1>
+            <br><br>
+
+            <div class="controls">
+                <label>
+                    <input type="checkbox" id="includeUppercase" checked>Include Uppercase (A-Z)
+                </label><br>
+                <label>
+                    <input type="checkbox" id="includeLowercase" checked>Include Lowercase (a-z)
+                </label><br>
+                <label>
+                    <input type="checkbox" id="includeNumbers" checked>Include Numbers (0-9)
+                </label><br>
+                <label>
+                    <input type="checkbox" id="includeSymbols" checked>Include Symbols (@#~%&^*)
+                </label><br>
+                <div class="length_control">
+                    <label for="passwordLength">Length: </label>
+                    <input type="number" id="passwordLength" value="12" min="4" max="20">
+                </div>
+            </div>
+
             <div class="display">
                 <input type="text" id="password" placeholder="Password">
                 <img src="images/copiar.png" onclick="copyPassword()">

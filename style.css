@@ -61,3 +61,56 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+.controls label{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.controls input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00cc00;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    transition: backgroud-color 0.3s ease;
+}
+.controls input[type="checkbox"]:checked {
+    background-color: #00cc00;
+}
+.controls input[type="checkbox"]:checked::before {
+    content: "\2714";
+    position: absolute;
+    left: 3px;
+    top: -2px;
+    font-size: 16px;
+    color: #ffffff;
+}
+.controls label:hover input[type="checkbox"] {
+    background-color: #00e60033;
+}
+.length_control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.length_control label[for="passwordLength"] {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-right: 10px;
+}
+#passwordLength {
+    border: 1px solid #00cc00;
+    background: #ffffff;
+    color: #333333;
+    padding: 5px;
+    width: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
