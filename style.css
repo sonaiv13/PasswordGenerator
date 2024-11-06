@@ -114,3 +114,24 @@ body{
     font-size: 16px;
     text-align: center;
 }
+.container h2 span {
+    font-weight: 300;
+    font-size: 25px;
+    color: #00b33c;
+    border-bottom: 4px solid #00b33c;
+    padding-bottom: 7px;
+}
+#passwordHistory {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+#passwordHistory li {
+    background: #003300;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+}

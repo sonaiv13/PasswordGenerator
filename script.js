@@ -1,4 +1,5 @@
 const passBox = document.getElementById("password");
+const passHistory = document.getElementById("passwordHistory");
 
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -49,9 +50,17 @@ function createPassword(){
 
     passBox.value = password;
 
+    //Add the password to the history
+    addPasswordToHistory(password);
 }
 
 function copyPassword(){
     passBox.select();
     document.execCommand("copy");
+}
+
+function addPasswordToHistory(password) {
+    const listItem = document.createElement("li");
+    listItem.textContent = password;
+    passHistory.prepend(listItem);
 }
